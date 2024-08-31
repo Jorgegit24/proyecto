@@ -1,0 +1,321 @@
+/* Estilos personalizados */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+   
+   
+}
+.bg-dark{
+    --bs-bg-opacity: 1;
+}
+.carousel-item img {
+    height: 300px; /* Ajusta la altura a lo que prefieras */
+    object-fit: cover; /* Esto hará que la imagen cubra el área sin distorsionarse */
+    width: 40%; /* Asegura que la imagen ocupe todo el ancho del carrusel */
+    object-fit: contain;
+    background-color: black;
+    opacity: 1;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+#tablaUsuarios {
+    width: 100%;
+    margin-top: 20px;
+    background-color: gray;
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    border-color: #005bb5;
+}
+
+.btn-primary:hover {
+    background-color: #005bb5;
+    border-color: #004999;
+}
+.body{
+    background-color: black;
+}
+.timer-section {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px;
+    background-color: orange;
+    color: #333;
+    height: 300px;
+    font-weight: bold;
+ 
+}
+
+#timer {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+.unit {
+    text-align: center;
+    margin: 0 15px;
+}
+.unit span {
+    display: block;
+    font-size: 36px;
+}
+.label {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espacio entre elementos */
+    padding: 20px;
+    
+}
+
+.item {
+    background: gray;
+    border-radius: 4px;
+    border-style: inherit;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(177, 116, 26, 0.1);
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item p {
+    margin: 0;
+    padding: 10px;
+    background: #fff;
+    color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta el número de columnas automáticamente */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.service {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service i {
+    font-size: 3rem;
+    color: #333;
+}
+
+.service h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.service p {
+    color: #666;
+}
+
+#footer {
+    background: black;
+    font-size: 1em;
+}
+
+#table{
+    text-emphasis-color: black;
+}
+
+.table-bordered tr:hover{
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+h2{
+    color: #fff;
+}
+
+h3{
+    color: white;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+#monthlyPayment {
+    font-weight: bold;
+    margin-top: 15px;
+}
+.selected {
+    background-color: #f0ad4e; /* Cambia el color de fondo según tu preferencia */
+    color: white;
+}
+#schedule-form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #schedule-form section {
+    margin-bottom: 20px;
+  }
+  
+  #schedule-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #schedule-form input[type="date"],
+  #schedule-form input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #schedule-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #schedule-form button[type="submit"] {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #schedule-form button[type="reset"] {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #schedule-form button[type="submit"]:hover,
+  #schedule-form button[type="reset"]:hover {
+    opacity: 0.8;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 20px;
+  }
+  
+  .col-md-6 form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .item {
+    margin: 10px;
+    width: calc(25% - 20px); /* Ajusta el ancho de cada item para que se ajusten 4 por fila */
+  }
+  
+  .item img {
+    width: 110%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 350px; /* Establece el alto de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que se ajuste al tamaño establecido */
+    border-radius: 10px; /* Agrega un borde redondeado a la imagen */
+  }
+  .item a {
+    color: orange;
+    text-decoration: none;
+  }
+  
+  .item a:hover {
+    color: red;
+    text-decoration: underline;
+  }

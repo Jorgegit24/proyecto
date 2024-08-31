@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos Deportivos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Autos Deportivos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i>  Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vehiculos.html"><i class="fas fa-car"></i>  Vehículos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Precios.html"><i class="fas fa-money-bill-wave"></i> Financiamiento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html"><i class="fas fa-wrench"></i>  Servicio Automotriz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html"> <i class="fas fa-envelope"></i>  Contácto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section style="color: black;">
+        <div class="container">
+          <section class="container my-5">
+            <div class="row">
+              <div class="col-md-4 h-100">
+                <h2>Formulario de Contacto</h2>
+                <form>
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input type="dir" class="form-control" id="direccion" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="tel" class="form-control" id="telefono" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="1" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+              <div class="col-md-4 h-100">
+                <h2> Prueba de Manejo</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="vehicle-model" class="form-label">Municipio:</label>
+                        <select class="form-control" id="vehicle-model" required>
+                          <option value="">Seleccione un municipio </option>
+                          <option value="municipio1">Monterrey</option>
+                          <option value="municipio2">San Pedro</option>
+                          <option value="municipio3">San Nicolas</option>
+                          <option value="municipio4">Guadalupe</option>
+                          <option value="municipio5">Escobedo</option>
+                          <!-- Agrega más opciones según sea necesario -->
+                        </select>
+                      </div>
+                    <div class="mb-3">
+                        <label for="date-drive-test" class="form-label">Fecha:</label>
+                        <input type="date" class="form-control" id="date-drive-test" required>
+                      </div>
+                   <div class="mb-3">
+                    <label for="time-drive-test" class="form-label">Hora:</label>
+                    <input type="time" class="form-control" id="time-drive-test" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="text" class="form-label">Número de Licencia:</label>
+                    <input type="text" class="form-control" id="date-drive-test" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="vehicle-model" class="form-label">Modelo de Vehículo:</label>
+                    <select class="form-control" id="vehicle-model" required>
+                      <option value="">Seleccione un modelo</option>
+                      <option value="modelo1">Koenigsegg Gemera (Tie)</option>
+                      <option value="modelo2">Hennessey Venom F5</option>
+                      <option value="modelo3">Ferrrari "LaFerrari" Hybrido</option>
+                      <option value="modelo4">Bentley Bacalar</option>
+                      <option value="modelo5">Lotus Evija (Tie)</option>
+                      <option value="modelo6">Bugati Veyron Super Sport 435km/hr</option>
+                      <option value="modelo7">Ferrari SF90 Stradale</option>
+                      <option value="modelo8">Lamborghini Revuelto</option>
+                      <option value="modelo9">Ferrari Purosangue | British GQ</option>
+                      <!-- Agrega más opciones según sea necesario -->
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Agendar Cita</button>
+                </form>
+              </div>
+              <div class="col-md-4 h-100">
+                <center><h3>Ubicación</h3><br></center>
+                <iframe src="https://www.google.com/maps/embed?..." width="100%" height="535"></iframe>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+      </section>
+      <br>
+      
+     <section>
+        <div >
+            <section class="">
+                <footer class="text-center text-white" style="background-color: orange;">
+                <div class="container p-4 pb-0">
+                 <section class="">
+                        <p class="d-flex justify-content-center align-items-center">
+                          <i class="fas fa-map-marker-alt" ><span class="me-3"> Calzada del Valle 593, Tel; 8180292929 - 8183585966 </span> </i>
+                        </p>
+                      </section>
+                </div>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2024 Jorge Pulido UANL Modulo 3                   
+                  </div>
+                </footer>
+             </section>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos Deportivos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Autos Deportivos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i>  Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vehiculos.html"><i class="fas fa-car"></i>  Vehículos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Precios.html"><i class="fas fa-money-bill-wave"></i> Financiamiento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html"><i class="fas fa-wrench"></i>  Servicio Automotriz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html"> <i class="fas fa-envelope"></i>  Contácto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel de Fotografías -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"></button>
+
+        </div>
+        <br><br><br>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img//Auto1.png" class="d-block w-100" alt="Auto 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Auto2.png" class="d-block w-100" alt="Auto 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Auto3.png" class="d-block w-100" alt="Auto 3">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Auto4.png" class="d-block w-100" alt="Auto 4">
+            </div> 
+            <div class="carousel-item">
+                <img src="./img/Auto5.png" class="d-block w-100" alt="Auto 5">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Auto6.png" class="d-block w-100" alt="Auto 6">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Auto7.png" class="d-block w-100" alt="Auto 7">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Auto8.png" class="d-block w-100" alt="Auto 8">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Auto9.png" class="d-block w-100" alt="Auto 8">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br><br><br>
+    <section id="countdown-section" class="timer-section">
+        <h1>PROMOCIÓN</h1>
+        <h3>MESES SIN INTERESES</h3>
+
+        <div id="timer">
+            <div class="unit">
+                <span id="days">0</span>
+                <span class="label">Días</span>
+            </div>
+            <div class="unit">
+                <span id="hours">0</span>
+                <span class="label">Horas</span>
+            </div>
+            <div class="unit">
+                <span id="minutes">0</span>
+                <span class="label">Minutos</span>
+            </div>
+            <div class="unit">
+                <span id="seconds">0</span>
+                <span class="label">Segundos</span>
+            </div>
+    </section>
+
+    <!-- Sección con Formulario -->
+    
+    <section class="container my-5">
+        <div class="services">
+            <div class="service">
+                <img src="/img/cocheprecios.png" alt="coche">
+                <a href="Precios.html"><h3>Precios</h3></a>
+                <p>Consulta nuestros precios para diferentes modelos.</p>
+            </div>
+            <div class="service">
+                <img src="/img/contactos.png" alt="">
+                <a href="Contacto.html"><h3>Realiza una cita</h3></a>
+                <p>Realiza una cita para una prueba de manejo.</p>
+            </div>
+            <div class="service">
+                <img src="/img/coche.png" alt="">
+                <a href="Precios.html"><h3>Cotizaciones</h3></a>
+                <p>Solicita una cotización personalizada para tu vehículo.</p>
+            </div>
+            <div class="service">
+                <img src="/img/mecanico.png" alt="">
+                <a href="servicios.html"><h3><h3>Mantenimiento</h3></h3></a>
+                <p>Programa el mantenimiento de tu auto con nosotros.</p>
+            </div>
+            <div class="service">
+                <img src="/img/servicio-al-cliente.png" alt="">
+                <a href="Contacto.html"><h3>Contacto</h3></a>
+                <p>Ponte en contacto con nosotros para más información.</p>
+            </div>
+           
+    </section>
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script>
+        let countdownTime = new Date().getTime() + (148* 60 * 60 * 1000); 
+
+            function updateTimer() {
+                let now = new Date().getTime();
+                let timeLeft = countdownTime - now;
+
+                // Cálculos de días, horas, minutos y segundos
+                let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                // Mostrar el tiempo restante
+                document.getElementById("days").innerText = days;
+                document.getElementById("hours").innerText = hours;
+                document.getElementById("minutes").innerText = minutes;
+                document.getElementById("seconds").innerText = seconds;
+
+                // Si la cuenta regresiva termina, mostrar un mensaje
+         if (timeLeft < 0) {
+        clearInterval(timerInterval);
+        document.getElementById("timer").innerText = "La Promoción ha finalizado";
+        }
+}
+
+        
+        let timerInterval = setInterval(updateTimer, 1000);
+
+    </script>
+
+    <section>
+        <div >
+            <section class="">
+                  <footer class="text-center text-white" style="background-color: orange;">
+                  <div class="container p-4 pb-0">
+                    <section class="">
+                        <i class="fas fa-map-marker-alt" ><span class="me-3"> Calzada del Valle 593, Tel; 8180292929 - 8183585966 </span> </i>
+                    </section><br>
+                  </div>
+                  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2024 Jorge Pulido UANL Modulo 3                   
+                  </div>
+                  <!-- Copyright -->
+                </footer>
+                <!-- Footer -->
+              </section>
+        </div>
+    </section>
+</body>
+</html>

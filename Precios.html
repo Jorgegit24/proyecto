@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos Deportivos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Autos Clásicos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i>  Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vehiculos.html"><i class="fas fa-car"></i>  Vehículos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Precios.html"><i class="fas fa-money-bill-wave"></i> Financiamiento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html"><i class="fas fa-wrench"></i>  Servicio Automotriz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html"> <i class="fas fa-envelope"></i>  Contácto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section style="color: blanchedalmond;">
+        <div class="container">
+            <h2>LISTA DE PRECIOS</h2>
+            <p>En la siguiente lista da un clic sobre el vehiculo que deseas cotizar.</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Vehículo</th>
+                        <th>Modelo</th>
+                        <th>Precio</th>
+                        <th>Financiamiento</th>
+                        <th>Existencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-price="1735350">
+                        <td>Koenigsegg Gemera (Tie)</td>
+                        <td>2024</td>
+                        <td>€ 1 735 350 EUROS</td>
+                        <td>Disponible</td>
+                        <td>2</td>
+                    </tr>
+                    <tr data-price="3000000">
+                        <td>Hennessey Venom F5</td>
+                        <td>2024</td>
+                        <td>€ 3 000 000 EUROS</td>
+                        <td>Disponible</td>
+                        <td>3</td>
+                    </tr>
+                    <tr data-price="6000000">
+                        <td>Ferrrari "LaFerrari" Hybrido</td>
+                        <td>2024</td>
+                        <td>€ 6 000 000 EUROS</td>
+                        <td>Disponible</td>
+                        <td>2</td>
+                    </tr>
+                    <tr data-price="4000000">
+                        <td>Bentley Bacalar</td>
+                        <td>2024</td>
+                        <td>€ 4 000 000 EUROS</td>
+                        <td>Disponible</td>
+                        <td>2</td>
+                    </tr>
+                    <tr data-price="6000000">
+                        <td>Lotus Evija (Tie)</td>
+                        <td>2024</td>
+                        <td>€ 6 000 000 EUROS</td>
+                        <td>Disponible</td>
+                        <td>4</td>
+                    </tr>
+                    <tr data-price="4200000">
+                        <td>Bugati Veyron Super Sport 435km/hr</td>
+                        <td>2024</td>
+                        <td>€ 4 200 000 EUROS</td>
+                        <td>Disponible</td>
+                        <td>1</td>
+                    </tr>
+                    <tr data-price="3500000">
+                        <td>Ferrari SF90 Stradale</td>
+                        <td>2024</td>
+                        <td>€ 3 500 000 EUROS</td>
+                        <td>Disponible</td>
+                        <td>4</td>
+                    </tr>
+                    <tr data-price="3000000">
+                        <td>Lamborghini Revuelto</td>
+                        <td>2024</td>
+                        <td>€ 3 000 000 EUROS</td>
+                        <td>Disponible</td>
+                        <td>2</td>
+                    </tr>
+                    <tr data-price="4000000">
+                        <td>Ferrari Purosangue | British GQ</td>
+                        <td>2024</td>
+                        <td>€ 4 000 000 EUROS</td>
+                        <td>Disponible</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <br><br><br>
+    <section>
+        <!-- Modal -->
+        <div class="modal fade" id="vehicleModal" tabindex="-1" aria-labelledby="vehicleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="vehicleModalLabel">Vehículo Seleccionado</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modalBodyContent">
+                        <!-- Aquí se mostrará el nombre del vehículo -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div>
+            <h1>Cotiza tu Vehículo Aquí de Contado o Financiado</h1>
+            <h2>Calcula tu Mensualidad</h2>
+            <br><br>
+            <form id="vehicleForm">
+                <div id="selectedVehicleName" style="margin-top: 10px;"></div>
+                <div id="selectedVehiclePrice" style="margin-top: 10px; font-weight: bold;"></div>
+                
+                <label for="paymentMethod">Forma de Pago:</label>
+                <select id="paymentMethod" name="paymentMethod" onchange="toggleFinancingOptions()">
+                    <option value="contado">Contado</option>
+                    <option value="financiamiento">Financiamiento</option>
+                </select>
+                
+                <div id="financingOptions" style="display:none;">
+                    <label for="downPayment">Porcentaje de Enganche:</label>
+                    <select id="downPayment" name="downPayment">
+                        <option value="10">10%</option>
+                        <option value="20">20%</option>
+                        <option value="30">30%</option>
+                    </select>
+                
+                    <label for="months">Número de Mensualidades:</label>
+                    <select id="months" name="months">
+                        <option value="12">12 meses</option>
+                        <option value="24">24 meses</option>
+                        <option value="36">36 meses</option>
+                    </select>
+                
+                    <p id="monthlyPayment"></p>
+                </div>
+                
+                <button type="button" onclick="calculateMonthlyPayment()">Calcular Mensualidad</button>
+                <button type="button" onclick="resetFinancingFields()">Hacer otro Cálculo</button>
+            </form>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div >
+            <section class="">
+                  <footer class="text-center text-white" style="background-color: orange;">
+                  <div class="container p-4 pb-0">
+                    <section class="">
+                        <i class="fas fa-map-marker-alt" ><span class="me-3"> Calzada del Valle 593, Tel; 8180292929 - 8183585966 </span> </i>
+                    </section><br>
+                  </div>
+                  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2024 Jorge Pulido UANL Modulo 3                   
+                  </div>
+                  <!-- Copyright -->
+                </footer>
+                <!-- Footer -->
+              </section>
+        </div>
+    </section>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
